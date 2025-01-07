@@ -88,7 +88,7 @@ importers:
         version: 3.0.1
       sse:
         specifier: github:mpetazzoni/sse.js
-        version: sse.js@https://codeload.github.com/mpetazzoni/sse.js/tar.gz/ee7d4cd0b5798c944ca0b2723c7250a5c5e6c65a
+        version: sse.js@git+https://git@github.com:mpetazzoni/sse.js.git#ee7d4cd0b5798c944ca0b2723c7250a5c5e6c65a
       webextension-polyfill:
         specifier: ^0.10.0
         version: 0.10.0
@@ -2939,8 +2939,8 @@ packages:
   mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
 
-  nanoid@3.3.7:
-    resolution: {integrity: sha512-eSRppjcPIatRIMC1U6UngP8XFcz8MQWGQdt1MTBQ7NaAmvXDfvNxbvWV3x2y6CdEUciCSsDHDQZbhYaB8QEo2g==}
+  nanoid@3.3.8:
+    resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
@@ -3553,8 +3553,8 @@ packages:
   sprintf-js@1.0.3:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
 
-  sse.js@https://codeload.github.com/mpetazzoni/sse.js/tar.gz/ee7d4cd0b5798c944ca0b2723c7250a5c5e6c65a:
-    resolution: {tarball: https://codeload.github.com/mpetazzoni/sse.js/tar.gz/ee7d4cd0b5798c944ca0b2723c7250a5c5e6c65a}
+  sse.js@git+https://git@github.com:mpetazzoni/sse.js.git#ee7d4cd0b5798c944ca0b2723c7250a5c5e6c65a:
+    resolution: {commit: ee7d4cd0b5798c944ca0b2723c7250a5c5e6c65a, repo: git@github.com:mpetazzoni/sse.js.git, type: git}
     version: 2.5.0
 
   stack-utils@2.0.6:
@@ -6773,7 +6773,7 @@ snapshots:
       object-assign: 4.1.1
       thenify-all: 1.6.0
 
-  nanoid@3.3.7: {}
+  nanoid@3.3.8: {}
 
   node-domexception@1.0.0: {}
 
@@ -7015,7 +7015,7 @@ snapshots:
 
   postcss@8.4.47:
     dependencies:
-      nanoid: 3.3.7
+      nanoid: 3.3.8
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
@@ -7409,7 +7409,7 @@ snapshots:
 
   sprintf-js@1.0.3: {}
 
-  sse.js@https://codeload.github.com/mpetazzoni/sse.js/tar.gz/ee7d4cd0b5798c944ca0b2723c7250a5c5e6c65a: {}
+  sse.js@git+https://git@github.com:mpetazzoni/sse.js.git#ee7d4cd0b5798c944ca0b2723c7250a5c5e6c65a: {}
 
   stack-utils@2.0.6:
     dependencies:
