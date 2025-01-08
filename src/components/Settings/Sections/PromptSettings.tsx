@@ -6,18 +6,27 @@ import QuickMenuCustomize from '../Elements/QuickMenuCustomize'
 import SectionHeading from '../Elements/SectionHeading'
 
 const PromptSettings = () => {
+  const messages = {
+    prompts: chrome.i18n.getMessage("Prompts"),
+    customizePrompts: chrome.i18n.getMessage("CustomizePrompts"),
+    descriptionCustomizePrompts: chrome.i18n.getMessage("descriptionCustomizePrompts"),
+    restoreDefaultPrompts: chrome.i18n.getMessage("RestoreDefaultPrompts"),
+    descriptionRestoreDefaultPrompts: chrome.i18n.getMessage("This will restore the default prompts. Be careful, this action cannot be undone. And any custom prompts you have added will be lost."),
+    restore: chrome.i18n.getMessage("Restore"),
+  }
+
   const [, setPrompts] = usePrompts()
 
   return (
     <div className="cdx-w-full cdx-flex-shrink-0 cdx-flex-1 cdx-rounded-md">
-      <SectionHeading title="Prompts" />
+      <SectionHeading title={messages.prompts} />
 
       {/* =========================
             Customize Prompts
       ===========================*/}
       <FieldWrapper
-        title="Customize Prompts"
-        description="You can organize the prompts in the quick menu by dragging these items around. You can also edit the prompts by clicking on the edit button and adding new prompts by clicking on the add button."
+        title={messages.customizePrompts}
+        description={messages.descriptionCustomizePrompts}
       >
         <QuickMenuCustomize />
       </FieldWrapper>
@@ -26,8 +35,8 @@ const PromptSettings = () => {
           Restore Default Prompts
       ===========================*/}
       <FieldWrapper
-        title="Restore Default Prompts"
-        description="This will restore the default prompts. Be careful, this action cannot be undone. And any custom prompts you have added will be lost."
+        title={messages.restoreDefaultPrompts}
+        description={messages.descriptionRestoreDefaultPrompts}
         row
       >
         <button
@@ -37,7 +46,7 @@ const PromptSettings = () => {
             setPrompts(defaultPrompts)
           }}
         >
-          <HiRefresh /> Restore
+          <HiRefresh /> {messages.restore}
         </button>
       </FieldWrapper>
     </div>

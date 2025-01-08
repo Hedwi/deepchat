@@ -1,13 +1,18 @@
 import endent from 'endent'
 
-export const SYSTEM_PROMPT =
-  'You are DeepChat, a chatbot in browser docked to right side of the screen.'
+const messages = {
+  systemPrompt: chrome.i18n.getMessage("systemPrompt"),
+  originalText: chrome.i18n.getMessage('originalText'),
+  instructions: chrome.i18n.getMessage('instructions'),
+}
+
+export const SYSTEM_PROMPT = messages.systemPrompt
 
 export const getTransformedPrompt = (prompt: string, selectedText: string) => {
   return endent`
-    #### Instructions:
+    #### ${messages.instructions}:
     ${prompt}
-    #### Original Text:
+    #### ${messages.originalText}:
     ${selectedText}
   `
 }

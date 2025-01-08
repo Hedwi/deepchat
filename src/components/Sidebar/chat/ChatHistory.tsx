@@ -4,6 +4,13 @@ import { RiAddLine, RiCloseCircleFill, RiTimeLine } from 'react-icons/ri'
 import { generateReadableRelativeDate } from '../../../lib/generateReadableDate'
 
 const ChatHistory = () => {
+
+  const messages = {
+    history: chrome.i18n.getMessage("history"),
+    newChat: chrome.i18n.getMessage("newChat"),
+  }
+
+
   const {
     history,
     setCurrentChatId,
@@ -18,7 +25,7 @@ const ChatHistory = () => {
   const currentChat = getChatHistory(currentChatId)
 
   const handleCreateNewChat = async () => {
-    const newId = createChatHistory('New Chat')
+    const newId = createChatHistory(messages.newChat)
     setCurrentChatId(newId)
   }
 
@@ -30,7 +37,7 @@ const ChatHistory = () => {
     <div>
       <DropdownMenu.Root>
         <DropdownMenu.Trigger className="cdx-flex cdx-items-center cdx-gap-1 cdx-text-neutral-500 dark:cdx-bg-neutral-900 cdx-bg-neutral-200 cdx-border cdx-rounded-md cdx-border-neutral-400/30 dark:cdx-border-neutral-500/30 cdx-py-1 cdx-px-3">
-          <RiTimeLine size={18} className="cdx-flex-shrink-0" /> History
+          <RiTimeLine size={18} className="cdx-flex-shrink-0" /> {messages.history}
         </DropdownMenu.Trigger>
         <DropdownMenu.Content
           side="top"
@@ -39,7 +46,7 @@ const ChatHistory = () => {
           <div>
             <div className="cdx-flex cdx-justify-between cdx-items-center cdx-p-3 cdx-border-b-[#E5E7EB] cdx-border-b dark:cdx-border-b-[#2F2F2F]">
               <h1 className="cdx-text-lg cdx-font-bold cdx-text-[#5A5A5A] dark:cdx-text-[#E3E3E3]">
-                History
+                {messages.history}
               </h1>
               <button
                 type="button"
@@ -47,7 +54,7 @@ const ChatHistory = () => {
                 onClick={handleCreateNewChat}
               >
                 <RiAddLine />
-                New Chat
+                {messages.newChat}
               </button>
             </div>
             <div className="cdx-max-h-96 cdx-overflow-y-auto">
@@ -57,11 +64,10 @@ const ChatHistory = () => {
                   onSelect={() => {
                     setCurrentChatId(chat.id)
                   }}
-                  className={`cdx-px-3 cdx-py-1.5 focus:cdx-outline-none focus-visible:cdx-bg-black/20 cdx-relative cdx-flex cdx-gap-3 cdx-justify-between cdx-items-center cdx-border-b dark:cdx-border-b-[#2F2F2F] ${
-                    i === history.length - 1
-                      ? 'cdx-border-b-0'
-                      : 'cdx-border-b-[#E5E7EB]'
-                  } cdx-cursor-pointer`}
+                  className={`cdx-px-3 cdx-py-1.5 focus:cdx-outline-none focus-visible:cdx-bg-black/20 cdx-relative cdx-flex cdx-gap-3 cdx-justify-between cdx-items-center cdx-border-b dark:cdx-border-b-[#2F2F2F] ${i === history.length - 1
+                    ? 'cdx-border-b-0'
+                    : 'cdx-border-b-[#E5E7EB]'
+                    } cdx-cursor-pointer`}
                 >
                   <div className="cdx-flex cdx-gap-2 cdx-justify-center cdx-items-center">
                     <div

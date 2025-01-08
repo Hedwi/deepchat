@@ -1,0 +1,211 @@
+{
+    "title": {
+        "message": "hello world",
+        "description": "Title string"
+    },
+    "RestoreDefaultPrompts": {
+        "message": "Restore Default Prompts",
+        "description": "Restore Default Prompts"
+    },
+    "ReviewSelection": {
+        "message": "Review Selection",
+        "description": "Review Selection"
+    },
+    "QuickMenu": {
+        "message": "Quick Menu",
+        "description": "Quick Menu"
+    },
+    "descriptionQuickMenu": {   
+        "message": "Enable quick menu to quickly access settings and help",
+        "description": "Enable quick menu to quickly access settings and help"
+    },
+    "EnableQuickMenu": {
+        "message": "Enable Quick Menu",
+        "description": "Enable Quick Menu"
+    },
+    "descriptionEnableQuickMenu": {
+        "message": "This will enable the quick menu which appears bellow text selection on any webpage. I recommend disabling it if you feel it intrusive, you can still use your prompts on selected text by right clicking and selecting the prompt from the context menu.",
+        "description": "Enable quick menu to quickly access settings and help"
+    },
+    "ExcludeSites": {
+        "message": "Exclude Sites",
+        "description": "Exclude Sites"
+    },
+    "descriptionExcludeSites": {
+        "message": "Exclude sites from DeepChat",
+        "description": "Exclude sites from DeepChat"
+    },
+    "sitesExample": {
+        "message": "Eg: google.com",
+        "description": "Eg: google.com"
+    },
+    "Chat": {
+        "message": "Chat",
+        "description": "Chat"
+    },
+    "OpenAIKey": {
+        "message": "AI API Key",
+        "description": "AI API Key"
+    },
+    "YouCanGetYourAPIKey": {
+        "message": "You can get your API key from AI service provider official website",
+        "description": "You can get your API key from AI service provider official website"
+    },
+    "BaseURL": {
+        "message": "Base URL",
+        "description": "Base URL"
+    },
+    "EnterBaseURL": {
+        "message": "Enter your custom API base URL(optional)",
+        "description": "Enter your custom API base URL(optional)"
+    },
+    "EnterPlaceholder": {
+        "message": "Enter your Base URL",
+        "description": "Enter your Base URL"
+    },
+    "descriptionModeTweak": {
+        "message": "Tweak temperature of response. Creative will generate more non deterministic responses, Precise will generate more deterministic responses.",
+        "description": "Tweak temperature of response. Creative will generate more non deterministic responses, Precise will generate more deterministic responses."
+    },
+    "Theme": {
+        "message": "Theme",
+        "description": "Theme"
+    },
+    "descriptionTheme": {
+        "message": "Change theme of the sidebar and quick menu",
+        "description": "Change theme of the sidebar and quick menu"
+    },
+    "WebpageContext": {
+        "message": "Webpage Context",
+        "description": "Webpage Context"
+    },
+    "descriptionWebpageContext": {
+        "message": "Enable DeepChat to answer questions based on the current webpage content",
+        "description": "Enable DeepChat to answer questions based on the current webpage content"
+    },
+    "AddCategory": {
+        "message": "Add Category",
+        "description": "Add Category"
+    },
+    "AddPrompt": {
+        "message": "Add Prompt",
+        "description": "Add Prompt"
+    },  
+    "AddNewCategory": {
+        "message": "Add New Category",
+        "description": "Add New Category"
+    },
+    "AddNewPrompt": {
+        "message": "Add New Prompt",
+        "description": "Add New Prompt"
+    },  
+    "EnterName": {
+        "message": "Enter Name",
+        "description": "Enter Name"
+    },
+    "EnterPrompt": {
+        "message": "Enter Prompt",
+        "description": "Enter Prompt"
+    },  
+    "Save": {
+        "message": "Save",
+        "description": "Save"
+    },
+    "Cancel": {
+        "message": "Cancel",
+        "description": "Cancel"
+    },
+    "descriptionCategory": {
+        "message": "Categories are used to organize your prompts. Once you create a new category or prompt, they will go at last in the list. You can drag and drop them to reorder them as you wish.",
+        "description": "Categories are used to organize your prompts. Once you create a new category or prompt, they will go at last in the list. You can drag and drop them to reorder them as you wish."
+    },
+    "CustomizePrompts": {
+        "message": "Customize Prompts",
+        "description": "Customize Prompts"
+    },
+    "descriptionCustomizePrompts": {
+        "message": "You can organize the prompts in the quick menu by dragging and dropping these items. You can also edit the prompts by clicking the edit button and adding new prompts.",
+        "description": "You can organize the prompts in the quick menu by dragging and dropping these items. You can also edit the prompts by clicking the edit button and adding new prompts."
+    },
+    "Prompts": {
+        "message": "Prompts",
+        "description": "Prompts"
+    },
+    "Edit": {
+        "message": "Edit",
+        "description": "Edit"
+    },
+    "Light": {
+        "message": "Light",
+        "description": "Light"
+    },
+    "Dark": {
+        "message": "Dark",
+        "description": "Dark"
+    },
+    "System": {
+        "message": "System",
+        "description": "System"
+    },
+    "Generating": {
+        "message": "Generating",
+        "description": "Generating"
+    },
+    "Error": {
+        "message": "Error",
+        "description": "Error"
+    },
+    "StartNewConversation": {
+        "message": "Start a new conversation 🎉",
+        "description": "Start a new conversation"
+    },
+    "TypeYourMessage": {
+        "message": "Type your message",
+        "description": "Type your message"
+    },
+    "PressSendButton": {
+        "message": "and press send button",
+        "description": "and press send button"
+    },
+    "history": {
+        "message": "History",
+        "description": "History"
+    },
+    "newChat": {
+        "message": "New Chat",
+        "description": "New Chat"
+    },
+    "typeYourMsg": {
+        "message": "Type your message here...",
+        "description": "Type your message here..."
+    },
+    "addPageContent": {
+        "message": "Add page content",
+        "description": "Add page content"
+    },
+    "send": {
+        "message": "Send",
+        "description": "Send"
+    },
+    "noShortcut": {
+        "message": "No shortcut",
+        "description": "No shortcut"
+    },
+    "shortcut": {
+        "message": "Shortcut",
+        "description": "Shortcut"
+    },
+    "systemPrompt": {
+        "message": "You are DeepChat, a chatbot in browser docked to right side of the screen.",
+        "description": "You are DeepChat, a chatbot in browser docked to right side of the screen."
+    },
+    "originalText": {
+        "message": "Original Text",
+        "description": "Original Text"
+    },
+    "instructions": {
+        "message": "Instructions",
+        "description": "Instructions"
+    }
+
+}

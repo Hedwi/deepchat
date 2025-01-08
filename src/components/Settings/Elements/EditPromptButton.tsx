@@ -13,6 +13,10 @@ export const EditPromptButton = ({
   const [, setPrompts] = usePrompts()
   const formRef = useRef<HTMLFormElement>(null)
 
+  const messages = {
+    edit: chrome.i18n.getMessage("Edit"),
+  }
+
   const handleEdit = () => {
     if (!formRef.current || !formRef.current.reportValidity()) return
 
@@ -47,7 +51,7 @@ export const EditPromptButton = ({
           className="cdx-flex cdx-items-center cdx-gap-2 cdx-rounded-sm cdx-px-1 cdx-bg-blue-300/50 dark:cdx-bg-blue-500/50"
           type="button"
         >
-          <HiPencilAlt /> Edit
+          <HiPencilAlt /> {messages.edit}
         </button>
       </Dialog.Trigger>
       <DialogPortal

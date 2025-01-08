@@ -29,6 +29,14 @@ const ChatList = ({
 }: ChatListProps) => {
   const containerRef = useRef<HTMLDivElement>(null)
 
+  const i18nMessages = {
+    startNewConversation: chrome.i18n.getMessage("StartNewConversation"),
+    typeYourMessage: chrome.i18n.getMessage("TypeYourMessage"),
+    generating: chrome.i18n.getMessage("Generating"),
+    error: chrome.i18n.getMessage("Error"),
+    pressSendButton: chrome.i18n.getMessage("PressSendButton"),
+  }
+
   // biome-ignore lint/correctness/useExhaustiveDependencies: This is intentional, we need this for scroll to bottom
   useEffect(() => {
     if (containerRef.current) {
@@ -67,10 +75,10 @@ const ChatList = ({
             width={128}
           />
           <h1 className="cdx-text-xl cdx-text-gray-500 dark:cdx-text-gray-400">
-            Start a new conversation 🎉
+            {i18nMessages.startNewConversation}
           </h1>
           <p className="cdx-text-gray-500 dark:cdx-text-gray-400 cdx-mt-1 cdx-leading-tight cdx-font-light">
-            Type your message at the bottom <br /> and press send button
+            {i18nMessages.typeYourMessage} <br /> {i18nMessages.pressSendButton}
           </p>
         </div>
       ) : (

@@ -15,6 +15,7 @@ export default defineManifest(async (env) => ({
     "DeepChat is a browser extension that allows you to use DeepSeek's LLM/ChatGPT in any website.",
   version: `${major}.${minor}.${patch}.${label}`,
   version_name: version,
+  default_locale: 'zh',
   action: {
     default_title: 'DeepChat - Open Sidebar',
   },

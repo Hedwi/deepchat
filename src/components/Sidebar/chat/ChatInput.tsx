@@ -46,6 +46,11 @@ export function SidebarInput({
   const [delayedLoading, setDelayedLoading] = useState(false)
   const { history } = useChatHistory()
 
+  const messages = {
+    typeYourMsg: chrome.i18n.getMessage("typeYourMessage"),
+    send: chrome.i18n.getMessage("send"),
+  }
+
   useEffect(() => {
     const handleLoadingTimeout = setTimeout(() => {
       setDelayedLoading(loading)
@@ -81,7 +86,7 @@ export function SidebarInput({
       onClick={handleSubmit}
       className="cdx-flex cdx-gap-2 disabled:cdx-bg-slate-500 disabled:cdx-text-slate-400 cdx-items-center cdx-bg-blue-500 hover:cdx-bg-blue-700 cdx-text-white cdx-py-2 cdx-px-4 cdx-rounded"
     >
-      <span>Send</span> <IoSend size={10} />
+      <span>{messages.send}</span> <IoSend size={10} />
     </button>
   )
 
@@ -125,7 +130,7 @@ export function SidebarInput({
         <TextareaAutosize
           minRows={2}
           maxLength={MAX_MESSAGE_LENGTH}
-          placeholder="Type your message here..."
+          placeholder={messages.typeYourMsg}
           value={messageDraft.text}
           disabled={loading}
           className="cdx-p-3 cdx-w-full focus:!cdx-outline-none placeholder:cdx-text-neutral-500 cdx-text-sm cdx-resize-none cdx-max-h-96 cdx-pb-0 cdx-bg-transparent !cdx-border-none"

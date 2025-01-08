@@ -9,6 +9,17 @@ import { capitalizeText } from '../../../lib/capitalizeText'
 const GeneralSettings = () => {
   const [settings, setSettings] = useSettings()
   const generalSettings = settings.general
+  const messages = {
+    generalSettings: chrome.i18n.getMessage("GeneralSettings"),
+    theme: chrome.i18n.getMessage("Theme"),
+    descriptionTheme: chrome.i18n.getMessage("descriptionTheme"),
+    webpageContext: chrome.i18n.getMessage("WebpageContext"),
+    descriptionWebpageContext: chrome.i18n.getMessage("descriptionWebpageContext"),
+    light: chrome.i18n.getMessage("Light"),
+    dark: chrome.i18n.getMessage("Dark"),
+    system: chrome.i18n.getMessage("System"),
+  }
+
 
   const handleThemeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const value = event.target.value
@@ -23,11 +34,11 @@ const GeneralSettings = () => {
 
   return (
     <div>
-      <SectionHeading title="General Settings" />
+      <SectionHeading title={messages.generalSettings} />
 
       <FieldWrapper
-        title="Theme"
-        description="Change theme of the sidebar and quick menu"
+        title={messages.theme}
+        description={messages.descriptionTheme}
         row
       >
         <select
@@ -37,14 +48,14 @@ const GeneralSettings = () => {
         >
           {Object.values(ThemeOptions).map((theme) => (
             <option key={theme} value={theme}>
-              {capitalizeText(theme)}
+              {messages[theme]}
             </option>
           ))}
         </select>
       </FieldWrapper>
       <FieldWrapper
-        title="Webpage Context"
-        description="Enable DeepChat to answer questions based on the current webpage content"
+        title={messages.webpageContext}
+        description={messages.descriptionWebpageContext}
         row
       >
         <Switch.Root

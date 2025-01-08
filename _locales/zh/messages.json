@@ -1,0 +1,218 @@
+{
+    "title": {
+        "message": "你好世界",
+        "description": "Title string"
+    },
+    "RestoreDefaultPrompts": {
+        "message": "恢复默认提示",
+        "description": "恢复默认提示"
+    },
+    "ReviewSelection": {
+        "message": "审查选择内容",
+        "description": "审查选择"
+    },
+    "QuickMenu": {
+        "message": "快速菜单",
+        "description": "快速菜单"
+    },
+    "descriptionQuickMenu": {
+        "message": "启用快速菜单以快速访问设置和帮助",
+        "description": "启用快速菜单以快速访问设置和帮助"
+    },
+    "EnableQuickMenu": {
+        "message": "启用快速菜单",
+        "description": "启用快速菜单"
+    },
+    "descriptionEnableQuickMenu": {
+        "message": "这将启用快速菜单，该菜单出现在任何网页上的文本选择下方。我建议在您觉得它令人讨厌时禁用它，您仍然可以使用您的提示选择文本，右键单击并从上下文菜单中选择提示。",
+        "description": "这将启用快速菜单，该菜单出现在任何网页上的文本选择下方。我建议在您觉得它令人讨厌时禁用它，您仍然可以使用您的提示选择文本，右键单击并从上下文菜单中选择提示。"
+    },
+    "sitesExample": {
+        "message": "Eg: google.com",
+        "description": "Eg: google.com"
+    },
+    "Chat": {
+        "message": "聊天",
+        "description": "聊天"
+    },
+    "APIKey": {
+        "message": "API Key",
+        "description": "API Key"
+    },
+    "YouCanGetYourAPIKey": {
+        "message": "您可以从AI服务提供商官方网站获取您的API密钥",
+        "description": "您可以从https://platform.openai.com/api-keys获取您的API密钥"
+    },
+    "BaseURL": {
+        "message": "Base URL",
+        "description": "Base URL"
+    },
+    "EnterBaseURL": {
+        "message": "输入您的自定义API URL(可选)",
+        "description": "输入您的自定义API URL(可选)"
+    },
+    "EnterPlaceholder": {
+        "message": "输入您的Base URL",
+        "description": "输入您的Base URL"
+    },
+    "Model": {
+        "message": "模型",
+        "description": "模型"
+    },
+    "ChooseTheModelYouWantToUse": {
+        "message": "选择您想要使用的模型",
+        "description": "Choose the model you want to use"
+    },
+    "descriptionModeTweak": {
+        "message": "调整响应的温度。创意将生成更多非确定性响应，精确将生成更多确定性响应。",
+        "description": "调整响应的温度。创意将生成更多非确定性响应，精确将生成更多确定性响应。"
+    },
+    "Theme": {
+        "message": "主题",
+        "description": "主题"
+    },
+    "descriptionTheme": {
+        "message": "更改侧边栏和快速菜单的主题",
+        "description": "更改侧边栏和快速菜单的主题"
+    },
+    "WebpageContext": {
+        "message": "网页上下文",
+        "description": "网页上下文"
+    },
+    "descriptionWebpageContext": {
+        "message": "启用DeepChat以根据当前网页内容回答问题",
+        "description": "启用DeepChat以根据当前网页内容回答问题"
+    },
+    "AddCategory": {
+        "message": "添加分类",
+        "description": "添加分类"
+    },
+    "AddPrompt": {
+        "message": "添加提示词",
+        "description": "添加提示词"
+    },
+    "AddNewCategory": {
+        "message": "添加新分类",
+        "description": "添加新分类"
+    },
+    "AddNewPrompt": {
+        "message": "添加新提示",
+        "description": "添加新提示"
+    },
+    "EnterName": {
+        "message": "输入名称",
+        "description": "输入名称"
+    },
+    "EnterPrompt": {
+        "message": "输入提示词",
+        "description": "输入提示词"
+    },
+    "Save": {
+        "message": "保存",
+        "description": "保存"
+    },
+    "Cancel": {
+        "message": "取消",
+        "description": "取消"
+    },
+    "Name": {
+        "message": "名称",
+        "description": "名称"
+    },
+    "Prompt": {
+        "message": "提示词",
+        "description": "提示词"
+    },
+    "descriptionCategory": {
+        "message": "分类用于组织您的提示词。创建新分类或提示词后，它们将添加到列表的末尾。您可以拖放它们以重新排序。",
+        "description": "分类用于组织您的提示词。创建新分类或提示词后，它们将添加到列表的末尾。您可以拖放它们以重新排序。"
+    },
+    "CustomizePrompts": {
+        "message": "自定义提示词",
+        "description": "自定义提示词"
+    },
+    "descriptionCustomizePrompts": {
+        "message": "您可以组织快速菜单中的提示词，通过拖放这些项目。您还可以通过点击编辑按钮并添加新提示词来编辑提示词。",
+        "description": "您可以组织快速菜单中的提示词，通过拖放这些项目。您还可以通过点击编辑按钮并添加新提示词来编辑提示词。"
+    },
+    "Prompts": {
+        "message": "提示词",
+        "description": "提示词"
+    },
+    "Edit": {
+        "message": "编辑",
+        "description": "编辑"
+    },
+    "Light": {
+        "message": "浅色",
+        "description": "浅色"
+    },
+    "Dark": {
+        "message": "深色",
+        "description": "深色"
+    },
+    "System": {
+        "message": "系统",
+        "description": "系统"
+    },
+    "Generating": {
+        "message": "生成中",
+        "description": "生成中"
+    },
+    "Error": {
+        "message": "错误",
+        "description": "错误"
+    },
+    "StartNewConversation": {
+        "message": "开始一个新对话🎉",
+        "description": "开始一个新对话"
+    },
+    "TypeYourMessage": {
+        "message": "输入您的消息",
+        "description": "输入您的消息"
+    },
+    "PressSendButton": {
+        "message": "并按发送按钮",
+        "description": "并按发送按钮"
+    },
+    "history": {
+        "message": "历史",
+        "description": "历史"
+    },
+    "newChat": {
+        "message": "新对话",
+        "description": "新对话"
+    },
+    "typeYourMsg": {
+        "message": "在这输入您的消息...",
+        "description": "在这输入您的消息..."
+    },
+    "addPageContent": {
+        "message": "添加网页内容",
+        "description": "添加网页内容"
+    },
+    "send": {
+        "message": "发送",
+        "description": "发送"
+    },
+    "noShortcut": {
+        "message": "没有快捷键",
+        "description": "没有快捷键"
+    },
+    "shortcut": {
+        "message": "快捷键",
+        "description": "快捷键"
+    },
+    "systemPrompt": {
+        "message": "你是DeepChat，一个在浏览器右侧的聊天机器人。",
+        "description": "你是DeepChat，一个在浏览器右侧的聊天机器人。"
+    },
+    "originalText": {
+        "message": "原始文本",
+        "description": "原始文本"
+    },
+    "instructions": {
+        "message": "指令",
+        "description": "指令"
+    }
+}

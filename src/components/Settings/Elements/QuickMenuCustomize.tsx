@@ -23,6 +23,9 @@ const selectPromptItems = (items?: TreeItems<Prompt>): Prompt[] | undefined =>
   )
 
 const QuickMenuCustomize = () => {
+  const messages = {
+    categoryDescription: chrome.i18n.getMessage("descriptionCategory"),
+  }
   const [prompts, setPrompts] = usePrompts()
 
   return (
@@ -40,9 +43,7 @@ const QuickMenuCustomize = () => {
           <AddItemButton isCategory={false} />
         </div>
         <div className="cdx-text-sm cdx-text-neutral-400 cdx-text-center cdx-mt-3">
-          Categories are used to organize your prompts. Once you create a new
-          category or prompt, they will go at last in the list. You can drag and
-          drop them to reorder them as you wish.
+          {messages.categoryDescription}
         </div>
       </div>
     </div>
