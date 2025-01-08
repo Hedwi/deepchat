@@ -15,6 +15,28 @@ const ChatSettings = () => {
   const OpenAiApiKeyInputRef = React.useRef<HTMLInputElement>(null)
   const OpenAiBaseUrlInputRef = React.useRef<HTMLInputElement>(null)
 
+  const messages = {
+    quickMenu: chrome.i18n.getMessage("QuickMenu"),
+    descriptionQuickMenu: chrome.i18n.getMessage("descriptionQuickMenu"),
+    enableQuickMenu: chrome.i18n.getMessage("EnableQuickMenu"),
+    descriptionEnableQuickMenu: chrome.i18n.getMessage("descriptionEnableQuickMenu"),
+    excludeSites: chrome.i18n.getMessage("ExcludeSites"),
+    descriptionExcludeSites: chrome.i18n.getMessage("descriptionExcludeSites"),
+    chat: chrome.i18n.getMessage("Chat"),
+    descriptionChat: chrome.i18n.getMessage("descriptionChat"),
+    apiKey: chrome.i18n.getMessage("APIKey"),
+    youcangetyourapikey: chrome.i18n.getMessage("YouCanGetYourAPIKey"),
+    update: chrome.i18n.getMessage("Update"),
+    baseUrl: chrome.i18n.getMessage("BaseURL"),
+    enterbaseUrl: chrome.i18n.getMessage("EnterBaseURL"),
+    enterplaceholder: chrome.i18n.getMessage("EnterPlaceholder"),
+    model: chrome.i18n.getMessage("Model"),
+    modelChoose: chrome.i18n.getMessage("ChooseTheModelYouWantToUse"),
+    mode: chrome.i18n.getMessage("Mode"),
+    modeTweak: chrome.i18n.getMessage("descriptionModeTweak"),
+
+  }
+
   const chatSettings = settings.chat
 
   const handleOpenAiKeySubmit = async (
@@ -65,10 +87,10 @@ const ChatSettings = () => {
 
   return (
     <div className="cdx-w-full cdx-flex-shrink-0 cdx-rounded-md">
-      <SectionHeading title="Chat" />
+      <SectionHeading title={messages.chat} />
       <FieldWrapper
-        title="API Key"
-        description="You can get your API key from website"
+        title={messages.apiKey}
+        description={messages.youcangetyourapikey}
         onSubmit={handleOpenAiKeySubmit}
       >
         <div className="cdx-flex cdx-gap-2 cdx-items-center">
@@ -95,13 +117,13 @@ const ChatSettings = () => {
             </button>
           </div>
           <button type="submit" className="btn">
-            Update
+            {messages.update}
           </button>
         </div>
       </FieldWrapper>
       <FieldWrapper
-        title="Base URL"
-        description="Enter your custom API base URL (optional)"
+        title={messages.baseUrl}
+        description={messages.enterbaseUrl}
         onSubmit={handleOpenAiKeySubmit}
       >
         <div className="cdx-flex cdx-gap-2 cdx-items-center">
@@ -109,17 +131,17 @@ const ChatSettings = () => {
             ref={OpenAiBaseUrlInputRef}
             name="openAiBaseUrl"
             defaultValue={chatSettings.openAiBaseUrl || ''}
-            placeholder="Enter your Base URL"
+            placeholder={messages.enterplaceholder}
             className="input cdx-w-full"
           />
           <button type="submit" className="btn">
-            Update
+            {messages.update}
           </button>
         </div>
       </FieldWrapper>
       <FieldWrapper
-        title="Model"
-        description="Choose between available chat models"
+        title={messages.model}
+        description={messages.modelChoose}
         row={true}
       >
         <select
@@ -135,8 +157,8 @@ const ChatSettings = () => {
         </select>
       </FieldWrapper>
       <FieldWrapper
-        title="Mode"
-        description="Tweak temperature of response. Creative will generate more non deterministic responses, Precise will generate more deterministic responses."
+        title={messages.mode}
+        description={messages.modeTweak}
         row={true}
       >
         <select

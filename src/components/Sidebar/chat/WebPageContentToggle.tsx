@@ -2,11 +2,14 @@ import * as Switch from '@radix-ui/react-switch'
 import { useSettings } from '../../../hooks/useSettings'
 
 const WebPageContentToggle = () => {
+  const messages = {
+    addPageContent: chrome.i18n.getMessage("addPageContent"),
+  }
   const [settings, setSettings] = useSettings()
   return (
     <div className="cdx-flex cdx-items-center cdx-justify-center cdx-gap-2 cdx-p-2 cdx-rounded">
       <label htmlFor="webpage-context" className="cdx-text-neutral-500">
-        Add page content
+        {messages.addPageContent}
       </label>
       <Switch.Root
         checked={settings.general.webpageContext}

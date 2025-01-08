@@ -8,6 +8,16 @@ import SectionHeading from '../Elements/SectionHeading'
 const QuickMenuSettings = () => {
   const [settings, setSettings] = useSettings()
 
+  const messages = {
+    quickMenu: chrome.i18n.getMessage("QuickMenu"),
+    descriptionQuickMenu: chrome.i18n.getMessage("descriptionQuickMenu"),
+    enableQuickMenu: chrome.i18n.getMessage("EnableQuickMenu"),
+    descriptionEnableQuickMenu: chrome.i18n.getMessage("descriptionEnableQuickMenu"),
+    excludeSites: chrome.i18n.getMessage("ExcludeSites"),
+    descriptionExcludeSites: chrome.i18n.getMessage("descriptionExcludeSites"),
+    sitesExample: chrome.i18n.getMessage("sitesExample"),
+  }
+
   const quickMenuSettings = settings.quickMenu
 
   const handleEnableQuickMenuChange = (enabled: boolean) => {
@@ -38,14 +48,14 @@ const QuickMenuSettings = () => {
 
   return (
     <div className="cdx-w-full cdx-flex-shrink-0 cdx-rounded-md">
-      <SectionHeading title="Quick Menu" />
+      <SectionHeading title={messages.quickMenu} />
 
       {/* =========================
         Enable Visible Quick Menu
       ===========================*/}
       <FieldWrapper
-        title="Enable Quick Menu"
-        description="This will enable the quick menu which appears bellow text selection on any webpage. I recommend disabling it if you feel it intrusive, you can still use your prompts on selected text by right clicking and selecting the prompt from the context menu."
+        title={messages.enableQuickMenu}
+        description={messages.descriptionEnableQuickMenu}
         row={true}
       >
         <Switch.Root
@@ -61,8 +71,8 @@ const QuickMenuSettings = () => {
               Exclude Sites
       ===========================*/}
       <FieldWrapper
-        title="Exclude Sites"
-        description="You can exclude sites from the quick menu by adding them here. (separated by comma) supports wildcards."
+        title={messages.excludeSites}
+        description={messages.descriptionExcludeSites}
       >
         <TextareaAutosize
           className="input"

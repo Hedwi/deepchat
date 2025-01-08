@@ -8,6 +8,11 @@ const Header = () => {
     chrome.runtime.sendMessage({ action: 'close-sidebar' })
   }
 
+  const messages = {
+    shortcut: chrome.i18n.getMessage("shortcut"),
+    noShortcut: chrome.i18n.getMessage("noShortcut"),
+  }
+
   const settingsPage = chrome.runtime.getURL('/src/pages/settings/index.html')
 
   const handleModifyShortcut = () => {
@@ -37,7 +42,7 @@ const Header = () => {
           className="cdx-flex cdx-items-center cdx-gap-2"
         >
           <span className="cdx-text-xs cdx-text-neutral-500  dark:cdx-bg-black/20 cdx-bg-black/10 cdx-border cdx-rounded-full cdx-border-neutral-400/30 dark:cdx-border-neutral-500/50 cdx-px-2 cdx-py-0.5">
-            {shortcut ? `Shortcut: ${shortcut}` : 'No shortcut'}
+            {shortcut ? `${messages.shortcut}: ${shortcut}` : messages.noShortcut}
           </span>
         </button>
         <a

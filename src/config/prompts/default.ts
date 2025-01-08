@@ -6,9 +6,10 @@ type PromptWithoutId = Omit<Prompt, 'id' | 'children'> & {
   children?: PromptWithoutId[]
 }
 
+
 const prompts: PromptWithoutId[] = [
   {
-    name: 'Review Selection',
+    name: "Review Selection",
     children: [
       {
         name: 'Summarize',
@@ -134,6 +135,7 @@ const recursiveAddId = (
   _parentId = '',
 ): Prompt[] => {
   return prompts.map((prompt) => {
+    //prompt.name = messages[prompt.name as keyof typeof messages]
     const id = hash(prompt)
     return {
       id,
