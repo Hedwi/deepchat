@@ -76,7 +76,7 @@ const QuickMenuSettings = () => {
       >
         <TextareaAutosize
           className="input"
-          placeholder="Eg: google.com, youtube.com, twitter.com"
+          placeholder={messages.sitesExample}
           minRows={2}
           value={quickMenuSettings.excludedSites.join(', ')}
           onChange={handleExcludeSitesChange}

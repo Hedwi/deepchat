@@ -27,33 +27,41 @@
         "message": "这将启用快速菜单，该菜单出现在任何网页上的文本选择下方。我建议在您觉得它令人讨厌时禁用它，您仍然可以使用您的提示选择文本，右键单击并从上下文菜单中选择提示。",
         "description": "这将启用快速菜单，该菜单出现在任何网页上的文本选择下方。我建议在您觉得它令人讨厌时禁用它，您仍然可以使用您的提示选择文本，右键单击并从上下文菜单中选择提示。"
     },
+    "ExcludeSites": {
+        "message": "排除网站",
+        "description": "排除网站"
+    },
+    "descriptionExcludeSites": {
+        "message": "从DeepChat中排除网站",
+        "description": "从DeepChat中排除网站"
+    },
     "sitesExample": {
-        "message": "Eg: google.com",
-        "description": "Eg: google.com"
+        "message": "示例: google.com",
+        "description": "示例: google.com"
     },
     "Chat": {
         "message": "聊天",
         "description": "聊天"
     },
     "APIKey": {
-        "message": "API Key",
-        "description": "API Key"
+        "message": "API密钥",
+        "description": "API密钥"
     },
     "YouCanGetYourAPIKey": {
         "message": "您可以从AI服务提供商官方网站获取您的API密钥",
         "description": "您可以从https://platform.openai.com/api-keys获取您的API密钥"
     },
     "BaseURL": {
-        "message": "Base URL",
-        "description": "Base URL"
+        "message": "接口地址",
+        "description": "接口地址"
     },
     "EnterBaseURL": {
         "message": "输入您的自定义API URL(可选)",
         "description": "输入您的自定义API URL(可选)"
     },
     "EnterPlaceholder": {
-        "message": "输入您的Base URL",
-        "description": "输入您的Base URL"
+        "message": "输入接口地址",
+        "description": "输入接口地址"
     },
     "Model": {
         "message": "模型",
@@ -214,5 +222,9 @@
     "instructions": {
         "message": "指令",
         "description": "指令"
+    },
+    "update": {
+        "message": "更新",
+        "description": "更新"
     }
 }

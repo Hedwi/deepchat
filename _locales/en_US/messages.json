@@ -206,6 +206,10 @@
     "instructions": {
         "message": "Instructions",
         "description": "Instructions"
+    },
+    "update": {
+        "message": "Update",
+        "description": "Update"
     }
 
 }
