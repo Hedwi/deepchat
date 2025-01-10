@@ -27,6 +27,11 @@ export const useChatModels = () => {
         })
 
         setModels(data.data)
+        if (data.data.length > 0) {
+          if (chatSettings.model == null) {
+            setActiveChatModel(data.data[0].id)
+          }
+        }
       } catch (error) {
         console.log('Failed to fetch models:', error)
         setModels([])
