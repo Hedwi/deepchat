@@ -2,7 +2,7 @@
 
 DeepChat is a Chrome extension that enables users to chat with DeepSeek by opening a sidebar on any website by using the shortcut `ctrl+shift+x`. In addition, it provides a floating menu underneath any selected text on any website that allows users to generate text summaries, check grammar issues, and customize text length.
 
-![DeepChat preview](deepchat.png)
+![DeepChat preview](demo.png)
 
 ## 🦾 Features
 
@@ -18,9 +18,7 @@ DeepChat is a Chrome extension that enables users to chat with DeepSeek by openi
 
 ## 🐳 Installation
 
-You can install Syncia through the [Chrome Web Store](https://chrome.google.com/webstore/detail/syncia-power-of-chatgpt-o/bhdfllifdfodbkihgmahlfmddlmfdjak?hl=en&authuser=0).
-
-<a href="https://www.producthunt.com/posts/syncia?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-syncia" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=391311&theme=neutral" alt="Syncia - Power&#0032;of&#0032;GPT&#0032;on&#0032;Any&#0032;Website | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+You can install Syncia through the [Chrome Web Store](https://chromewebstore.google.com/detail/deepchat-power-of-chatgpt/femhcibnncinlabdboehojdhfcihpkpl?hl=en&authuser=0)
 
 Alternatively, you can install Syncia manually by following these steps:
 
