@@ -2,7 +2,7 @@
 
 DeepChat is a Chrome extension that enables users to chat with DeepSeek by opening a sidebar on any website by using the shortcut `ctrl+shift+x`. In addition, it provides a floating menu underneath any selected text on any website that allows users to generate text summaries, check grammar issues, and customize text length.
 
-![DeepChat preview](demo.png)
+![DeepChat preview](images/demo.png)
 
 ## 🦾 Features
 
