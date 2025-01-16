@@ -9,7 +9,7 @@ export const generatePromptInSidebar = (
     'deepchat_sidebar',
   ) as HTMLIFrameElement
   if (sideBarIframe.style.width === '0px') {
-    sideBarIframe.style.width = '400px'
+    sideBarIframe.style.width = '600px'
   }
   sideBarIframe.contentWindow?.postMessage(
     {

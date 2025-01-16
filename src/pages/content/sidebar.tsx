@@ -28,7 +28,7 @@ document.body.appendChild(iframe)
 chrome.runtime.onMessage.addListener((msg) => {
   if (msg.action === 'open-sidebar') {
     if (iframe.style.width === '0px') {
-      iframe.style.width = '400px'
+      iframe.style.width = '600px'
     } else {
       iframe.style.width = '0px'
     }

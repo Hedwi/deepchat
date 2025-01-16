@@ -87,7 +87,7 @@ const ChatList = ({
           .map((msg, i) => (
             <div
               data-user={msg.role === ChatRole.USER ? 'true' : undefined}
-              className="markdown cdx-group cdx-relative cdx-px-4 cdx-py-2 data-[user]:cdx-border-l-2 cdx-border-blue-400 data-[user]:cdx-bg-black/5 data-[user]:dark:cdx-bg-neutral-900/50 cdx-max-w-[400px]"
+              className="markdown cdx-group cdx-relative cdx-px-4 cdx-py-2 data-[user]:cdx-border-l-2 cdx-border-blue-400 data-[user]:cdx-bg-black/5 data-[user]:dark:cdx-bg-neutral-900/50 cdx-max-w-[600px]"
               key={`${msg.timestamp}-${i}`}
             >
               {msg.role === ChatRole.USER && (
