@@ -10,7 +10,7 @@ export default defineManifest(async (env) => ({
   name:
     env.mode === 'staging'
       ? '[INTERNAL] DeepChat'
-      : 'DeepChat - Power of ChatGPT on any website',
+      : 'DeepChat - Power of DeepSeek on any website',
   description:
     "DeepChat is a browser extension that allows you to use DeepSeek's LLM/ChatGPT in any website.",
   version: `${major}.${minor}.${patch}.${label}`,
