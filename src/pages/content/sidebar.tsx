@@ -68,7 +68,7 @@ window.addEventListener('message', async (event) => {
   if (action === 'get-screenshot-image') {
     iframe.style.width = '0px'
     const image = await getScreenshotImage()
-    iframe.style.width = '400px'
+    iframe.style.width = '600px'
     iframe.contentWindow?.postMessage(
       {
         action: 'get-screenshot-image',
