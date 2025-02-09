@@ -11,6 +11,8 @@ import type { Settings } from '../../../config/settings'
  * If the user has excluded the current site, it is not initialized.
  */
 const initQuickMenu = () => {
+    /*
+
   contentScriptLog('QuickMenu')
 
   document.body.classList.add('deepchat_body')
@@ -27,12 +29,14 @@ const initQuickMenu = () => {
         background: 'transparent',
         boxShadow: 'none',
         zIndex: 2147483647,
+        width: '0px !important',
         borderRadius: '0',
         padding: '0',
         margin: '10px',
-      }}
+        }}
     />,
   )
+  */
 }
 
 chrome.storage.sync.get(['SETTINGS'], (result) => {
