@@ -6,9 +6,8 @@ DeepChat is a Chrome extension that enables users to chat with DeepSeek by openi
 
 ## 🦾 Features
 
-- 🗨️ Chat with ChatGPT through a sidebar.
+- 🗨️ Chat with DeepSeek through a sidebar.
 - 🔑 User your own AI API key.
-- 📜 Quick menu underneath any selected text which allows you to summarize, simplify language, translate, and more (extendable with custom prompts).
 - 💯 Fully customizable settings page.
 - 🎨 Has both light mode and dark mode !
 - 📚 Answer questions in context with text from webpage.
@@ -31,11 +30,7 @@ Alternatively, you can install Syncia manually by following these steps:
 
 ## 💫 Usage
 
-To use Syncia, simply press the shortcut ctrl+shift+x on any website to open the sidebar and start chatting with ChatGPT. To use the text-related features, select the text on the website and click on the floating menu that appears underneath the selection.
-
-### Quick Menu
-
-When you select a text, a quick menu will appear with the following options:
+To use Syncia, simply press the shortcut ctrl+shift+x on any website to open the sidebar and start chatting with DeepSeek. To use the text-related features, select the text on the website and click on the floating menu that appears underneath the selection.
 
 #### REVIEW SELECTION
 
@@ -74,19 +69,10 @@ You can also contribute to the project by creating a pull request. please follow
 5. Push your branch to your fork.
 6. Create a pull request on this repository with a descriptive title and message.
 
-Checkout the [CONTRIBUTING.md](
-    https://github.com/Royal-lobster/Syncia/blob/main/CONTRIBUTING.md
-) file for more information.
-
-## 🔎 Issues and Pull Requests
-
-[![GitHub issues](https://flat.badgen.net/github/issues/Royal-lobster/Syncia)](https://github.com/Royal-lobster/Syncia/issues)
-[![GitHub pull requests](https://flat.badgen.net/github/prs/Royal-lobster/Syncia)](https://github.com/Royal-lobster/Syncia/pulls)
-[![Contributors](https://flat.badgen.net/github/contributors/Royal-lobster/Syncia)](https://github.com/Royal-lobster/Syncia/graphs/contributors)
 
 
 If you encounter any issues while using Syncia or want to suggest new features, please create an issue on this repository. If you want to contribute to the project, please create a pull request for existing [Issues](https://github.com/Royal-lobster/Syncia/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)
 
 ## 📦 License
 
-Syncia is licensed under the MIT License. See the [LICENSE](https://github.com/Royal-lobster/Syncia/blob/main/LICENSE)
+D is licensed under the MIT License. See the [LICENSE](https://github.com/Royal-lobster/Syncia/blob/main/LICENSE)
