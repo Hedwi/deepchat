@@ -88,7 +88,7 @@ importers:
         version: 3.0.1
       sse:
         specifier: github:mpetazzoni/sse.js
-        version: sse.js@https://codeload.github.com/mpetazzoni/sse.js/tar.gz/ee7d4cd0b5798c944ca0b2723c7250a5c5e6c65a
+        version: sse.js@git+https://git@github.com:mpetazzoni/sse.js.git#ee7d4cd0b5798c944ca0b2723c7250a5c5e6c65a
       webextension-polyfill:
         specifier: ^0.10.0
         version: 0.10.0
@@ -122,7 +122,7 @@ importers:
         version: 15.5.13
       '@vitejs/plugin-react':
         specifier: ^3.1.0
-        version: 3.1.0(vite@4.5.5(@types/node@18.19.57))
+        version: 3.1.0(vite@4.5.6(@types/node@18.19.57))
       autoprefixer:
         specifier: ^10.4.13
         version: 10.4.20(postcss@8.4.47)
@@ -142,11 +142,11 @@ importers:
         specifier: ^4.9.5
         version: 4.9.5
       vite:
-        specifier: ^4.1.1
-        version: 4.5.5(@types/node@18.19.57)
+        specifier: ^4.5.6
+        version: 4.5.6(@types/node@18.19.57)
       vite-plugin-zip-pack:
         specifier: ^1.0.5
-        version: 1.2.4(vite@4.5.5(@types/node@18.19.57))
+        version: 1.2.4(vite@4.5.6(@types/node@18.19.57))
 
 packages:
 
@@ -3553,8 +3553,8 @@ packages:
   sprintf-js@1.0.3:
     resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
 
-  sse.js@https://codeload.github.com/mpetazzoni/sse.js/tar.gz/ee7d4cd0b5798c944ca0b2723c7250a5c5e6c65a:
-    resolution: {tarball: https://codeload.github.com/mpetazzoni/sse.js/tar.gz/ee7d4cd0b5798c944ca0b2723c7250a5c5e6c65a}
+  sse.js@git+https://git@github.com:mpetazzoni/sse.js.git#ee7d4cd0b5798c944ca0b2723c7250a5c5e6c65a:
+    resolution: {commit: ee7d4cd0b5798c944ca0b2723c7250a5c5e6c65a, repo: git@github.com:mpetazzoni/sse.js.git, type: git}
     version: 2.5.0
 
   stack-utils@2.0.6:
@@ -3808,8 +3808,8 @@ packages:
     peerDependencies:
       vite: '>=2.x'
 
-  vite@4.5.5:
-    resolution: {integrity: sha512-ifW3Lb2sMdX+WU91s3R0FyQlAyLxOzCSCP37ujw0+r5POeHPwe6udWVIElKQq8gk3t7b8rkmvqC6IHBpCff4GQ==}
+  vite@4.5.6:
+    resolution: {integrity: sha512-ElBNuVvJKslxcfY2gMmae5IjaKGqCYGicCNZ+8R56sAznobeE3pI9ctzI17cBS/6OJh5YuQNMSN4BP4dRjugBg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -5093,14 +5093,14 @@ snapshots:
       '@types/node': 18.19.57
     optional: true
 
-  '@vitejs/plugin-react@3.1.0(vite@4.5.5(@types/node@18.19.57))':
+  '@vitejs/plugin-react@3.1.0(vite@4.5.6(@types/node@18.19.57))':
     dependencies:
       '@babel/core': 7.25.8
       '@babel/plugin-transform-react-jsx-self': 7.25.7(@babel/core@7.25.8)
       '@babel/plugin-transform-react-jsx-source': 7.25.7(@babel/core@7.25.8)
       magic-string: 0.27.0
       react-refresh: 0.14.2
-      vite: 4.5.5(@types/node@18.19.57)
+      vite: 4.5.6(@types/node@18.19.57)
     transitivePeerDependencies:
       - supports-color
 
@@ -7409,7 +7409,7 @@ snapshots:
 
   sprintf-js@1.0.3: {}
 
-  sse.js@https://codeload.github.com/mpetazzoni/sse.js/tar.gz/ee7d4cd0b5798c944ca0b2723c7250a5c5e6c65a: {}
+  sse.js@git+https://git@github.com:mpetazzoni/sse.js.git#ee7d4cd0b5798c944ca0b2723c7250a5c5e6c65a: {}
 
   stack-utils@2.0.6:
     dependencies:
@@ -7665,12 +7665,12 @@ snapshots:
       unist-util-stringify-position: 3.0.3
       vfile-message: 3.1.4
 
-  vite-plugin-zip-pack@1.2.4(vite@4.5.5(@types/node@18.19.57)):
+  vite-plugin-zip-pack@1.2.4(vite@4.5.6(@types/node@18.19.57)):
     dependencies:
       jszip: 3.10.1
-      vite: 4.5.5(@types/node@18.19.57)
+      vite: 4.5.6(@types/node@18.19.57)
 
-  vite@4.5.5(@types/node@18.19.57):
+  vite@4.5.6(@types/node@18.19.57):
     dependencies:
       esbuild: 0.18.20
       postcss: 8.4.47
